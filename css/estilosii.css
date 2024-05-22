@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* tipografias */
+
+
+                    /*--------------- menu --------- */
+                   
+                    .logo{
+                        font-size: 50px;
+                        padding: 5px 20px;
+                        float: left;
+                        color: aliceblue;
+                        margin-right: 5cm;
+                    }
+                    #color-logo{
+                        color: darkgoldenrod;
+                        font-size: 50px;
+                    }
+                    #color-logo2{
+                        font-size: 50px;
+                    }
+                    #navegacionPrincipal {
+                        width: 100%;
+                        height: 2cm;
+                       background-color:  #000;
+                       
+                       
+                    }
+               
+                    header{
+                        position: sticky;
+                        top: 0;
+                        z-index: 100;
+                      }
+                    
+                    .menuNavP {
+                        height: 2cm;
+                        display: flex;
+                        grid-template-columns: repeat(5, 18%);
+                        grid-template-rows: 80px;
+                    }
+                  
+                    
+                    .menuNavP li {
+                        list-style: none;
+                        border-radius: 40px;
+                        display: flex;
+                        place-items: center;
+                        grid-template-rows: 40px;
+                        height: 100%;
+                        width: 100%;
+                        padding: 1.5rem 3px;
+                       
+                      
+                    }
+                    
+                    .menuNavP li a {
+                       
+                        text-decoration: none;
+                        color: #fdfbfb;
+                        font-size: 19px;
+                        text-align: center;
+                          height: 100%;
+                          width: 100%;
+                        overflow: hidden;
+                    }
+                    
+                    .usuarioNavegacion {
+                        width: 100%;
+                    
+                    }
+                    
+                    .menuNavP li a:hover {
+                        text-decoration: none;
+                        color:darkgoldenrod;
+                        
+                    }
+                    
+                    .menuNavP li:hover .Submenu {
+                        visibility: visible;
+                    }
+                    .menuNavP li:hover .Submenu1 {
+                        visibility: visible;
+                    }
+                    .menuNavP li:hover .Submenu2 {
+                        visibility: visible;
+                    }
+                    
+                    .Submenu {
+                        visibility: hidden;
+                        margin-top: 2px;
+                        display:grid;
+                        width: 3.5cm;
+                        height: 200%;
+                        border-radius: 5px;
+                        z-index: 1;
+                        background-color:#000000;
+                        position: absolute;
+                        top: 2cm;
+                        right:3cm;
+                        text-align: center;
+                        text-align: center;
+                        padding: 13px;
+                    
+                    }
+                    .Submenu1 {
+                        visibility: hidden;
+                        margin-top: 2px;
+                        display:grid;
+                        width: 4cm;
+                        height: 200%;
+                        border-radius: 5px;
+                        z-index: 1;
+                        background-color:#000000;
+                        position: absolute;
+                        top: 2cm;
+                        right:6cm;
+                        text-align: center;
+                        text-align: center;
+                        padding: 13px;
+                        animation-duration: .5s;
+                      
+                      }
+                    .Submenu2 {
+                        visibility: hidden;
+                        margin-top: 2px;
+                        display:grid;
+                        width: 3cm;
+                        height: 560%;
+                        z-index: 1;
+                        background-color:#000000d5;
+                        position: absolute;
+                        top: 2cm;
+                        right:1cm;
+                        text-align: center;
+                        text-align: center;
+                        padding: 13px;
+                        animation-duration: .6s;
+                        border: 1px solid goldenrod;
+                      
+                      }
+                      
+
+                    .Submenu li{
+                        width: 100%;
+                        height: 40%;
+                       
+                       
+                    }
+                    .Submenu1 li{
+                        width: 100%;
+                        height: 40%;
+                       
+                       
+                    }
+                    .Submenu2 li{
+                        width: 100%;
+                        height: 40%;
+                        border-bottom:2px solid #fdfbfb;
+                        border-radius: 0;
+                       
+                       
+                    }
+                    .Submenu li a{
+                        text-decoration: none;
+                        color: #fdfbfb;
+                        font-size: 17px;
+                        text-align: center;
+                       padding:5px ;
+                        height: 2.5rem;
+                        width: 100%;
+
+                    }
+                    .Submenu1 li a{
+                        text-decoration: none;
+                        color: #fdfbfb;
+                        font-size: 17px;
+                        text-align: center;
+                        padding:5px ;
+                        height: 2.5rem;
+                        width: 100%;
+                    }
+                    .Submenu2 li a{
+                        text-decoration: none;
+                        color: goldenrod;
+                        font-size: 17px;
+                        text-align: center;
+                        padding:5px ;
+                        height: 2rem;
+                        width: 100%;
+                    }
+li a:hover {
+    color: darkgoldenrod;
+    
+ }
+ .Submenu li a:hover{
+  color: #b80b0b;
+ }
+ .Submenu1 li a:hover{
+  color: #b80b0b;
+ }
+ .Submenu2 li a:hover{
+  color: #b80b0b;
+ }
+
+
+
+
+                         /*---------- slider o carrusel------ */
+ #conteitemscarrusel{
+width: 80%;
+height: 436px;
+overflow: hidden;
+margin:2cm 5cm;
+position: relative;
+
+ }      
+ .fondo-index{
+    background-image: url('./fondo1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+ } 
+.fondo-estilo{
+background: rgba(15, 15, 15, 0.76);
+
+}
+       
+.itemcarrusel{
+  
+    height:436px;
+    position: relative;
+    background-size: cover;
+    width: 100%;
+   
+}
+ @keyframes cambio-1 {
+    0%{margin-left: 0;}
+    25%{margin-left: 0;}
+}
+@keyframes cambio-2 {
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+}
+@keyframes cambio-3 {
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+}
+@keyframes cambio-4 {
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+@keyframes cambio-5 {
+    90%{margin-left: -400%;}
+    115%{margin-left: -400%;}
+} 
+    
+
+
+.tarjetacarrusel{
+  position: relative;
+    height: 95%;
+  transition: 2s;
+}
+
+.flechascarrusel{
+    position:absolute ;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+}
+#targetacarrusel-1{
+background-color:transparent; 
+overflow: hidden;
+
+
+}
+
+#targetacarrusel-2{
+background-color: transparent;
+overflow: hidden;
+
+}
+
+#targetacarrusel-3{
+background-color: transparent;
+overflow: hidden;
+}
+#targetacarrusel-4{
+background-color: transparent;
+overflow: hidden;
+}
+#targetacarrusel-5{
+background-color: transparent;
+overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+i{
+    background-color: transparent;
+    font-size: 30px;
+  
+} 
+button{
+    background-color: transparent;
+    border: none;
+}
+
+
+
+/* -------imagenes de productos-------- */
+
+  .imagen1{
+    width: 40%;
+    height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 5px 0px 5px 100px;
+   border-radius: 20px;
+
+
+}
+.imagen2{
+    width: 40%;
+    height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 5px 0px 5px 90px;
+}
+.imagen3{
+    width: 50%;
+    height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 5px 0px 5px 90px;
+}
+.imagen4{
+    width: 40%;
+    height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 5px 0px 5px 90px;
+}
+.imagen5{
+    width: 50%;
+    height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 5px 0px 5px 130px;
+}  
+
+
+/*------------- DESCRIPCION LOCIONES-------------- */
+
+ .descripcion{
+font-size:  20px;
+color: white;
+position: absolute;
+top: 5%;
+left:45% ;
+padding: 20px 60px 5px 10px;
+}
+
+.descripcion h2{    
+    text-align: center;
+    padding: 10px;
+    color:#b80b0b;
+    font-size: 50px;
+    
+}
+
+.buton-verd{
+    background-color: #b80b0b;
+    padding: 10px;
+    border-radius: 6px;
+    position: absolute;
+    left: 70%;
+    bottom: 13%;
+    width: 5cm;
+    height: 3rem;
+}
+.buton-verd a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.buton-verd:hover{
+    background-color:#680202 ;
+}
+
+.precio{
+    font-size: 40px;
+}
+
+.descripcion-3{
+font-size:  20px;
+color: white;
+position: absolute;
+top: 5%;
+left:50% ;
+padding: 20px 60px 5px 10px;
+}
+
+
+.descripcion-3 h2{
+    text-align: center;
+    padding: 10px;
+    color:#b80b0b;
+    font-size: 50px;
+}
+.descripcion-5{
+    font-size:  20px;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left:50% ;
+    padding: 20px 60px 5px 10px;
+    }
+    
+    
+    .descripcion-5 h2{
+        text-align: center;
+        padding: 10px;
+        color:#b80b0b;
+        font-size: 40px;
+    }  
+   
+      
+    /* .slider {
+        position: relative;
+        width:22cm;
+        height:12cm ;
+        margin: 54px 0 0 8cm;
+        overflow: hidden;
+        border-radius: 6px;
+        
+      }
+      .slider .slider-container {
+        display: flex;
+        width: 40%;
+        height: 76%;
+        transition: transform 1.2s ease;
+        transform: translateX(0);
+        background-size: cover;
+        overflow: hidden;
+        
+
+      }
+      .slider .slider-container .slider-item {
+        width: 100%;
+        height: 100%;
+      }
+      .slider .slider-container .slider-item img {
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .slider .slider-container .slider-item.active {
+        transform: translateX(-110%);
+      }
+       */
+    
+ /* pie de pagina      */
+
+ footer{
+    height: 2cm;
+    width: 100%;
+    background-color: #0f0f0f;
+    color:  white;
+    display: flex;
+    z-index: 1;
+    padding: 6px;
+
+}
+.pieigualdad{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: 3px solid white;
+}
+h3{
+    text-align: right;
+    font-size: 20px;
+    color:  white;
+    margin-right: 2cm;
+    padding: 5px;
+}
+footer{
+    text-decoration: dashed;
+    float: right;
+    display: block;
+    color: white;
+    position:sticky;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 2px 10px 3px 10px;  
+}
+.foter1{
+  text-decoration: dashed;
+  float: right;
+  display: block;
+  color: white;
+  position: sticky;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 2px 10px 3px 10px;  
+}
+    footer a:hover{
+        color: darkgoldenrod;
+    }
+    #conteitemscarrusel{
+        margin-bottom: -6px;
+        position: static;
+    }
+    .icon-instagrem{
+        color:  rgb(241, 8, 136);
+         
+        }
+        .icon-phone{
+          color: rgb(11, 28, 184);
+        }
+      
+        .icon-twitter{
+         margin-right: 20px;
+          color: rgb(0, 162, 255);
+        }
+        .icon-whatsapp{
+          
+          color: green;
+        }
+        .icon-facebook-official{
+          color: blue;
+         
+        }
+        .icon-chevron-circle-left{
+            color: rgba(255, 255, 255, 0.364);
+            
+          }
+          .icon-chevron-circle-right{
+            color: rgba(255, 255, 255, 0.364);
+            
+          }
+          #horarios{
+            color: white;
+            font-size: 16px;
+            text-align: justify;
+            width: 30%;
+          position:absolute;
+          overflow: hidden;
+          padding: 10px;
+          margin-left: 1cm;
+            
+          }
+
+          /* representantes */
+          .conteiner_representantes{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+          }
+          #integrantes_tittle{
+            width: 100%;
+            text-align: center;
+            color: goldenrod;
+            background-color: #000;
+            border-bottom: 2px solid white;
+            font-size: 45px;
+            font-style: italic;
+            height: 1.5cm;
+          }
+          .icon-shopping-cart{
+            color: rgb(0, 0, 0);
+          
+        }
+          .conteiner_representantes h1{
+            width: 100%;
+            text-align: center;
+            color: goldenrod;
+           
+          }
+          .representante_img{
+            width: 18rem;
+            height: 25rem;
+            display: grid;
+           
+            place-items: center;
+            background-color: rgba(0, 0, 0, 0.603);
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 20px;
+          }
+          .representante_img img{
+            width: 9rem;
+            height: 9rem;
+            border-radius: 50%;
+            background-position: center;
+            border: 1px solid red;
+          }
+          .desc_repre{
+            width: 100%;
+            padding: 5px 15px;
+          }
+          .desc_repre p{
+            color:rgb(255, 255, 255);
+            
+          }

@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-1";
+  src:url("../fonts/untitled-font-1.eot");
+  src:url("../fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/untitled-font-1.woff") format("woff"),
+    url("../fonts/untitled-font-1.ttf") format("truetype"),
+    url("../fonts/untitled-font-1.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\61";
+}
+.icon-chevron-circle-left:before {
+  content: "\62";
+}
+.icon-chevron-circle-right:before {
+  content: "\63";
+}
+.icon-shopping-cart:before {
+  content: "\64";
+}
+.icon-facebook-official:before {
+  content: "\65";
+}
+.icon-whatsapp:before {
+  content: "\66";
+}
+.icon-user:before {
+  content: "\67";
+}
+.icon-twitter:before {
+  content: "\68";
+}
+.icon-instagrem:before {
+  content: "\69";
+}
+.icon-phone:before {
+  content: "\6a";
+}
+.icon-caddie-shopping-streamline:before {
+  content: "\6b";
+  font-size: 30px;
+  position: static;
+}
+.icon-user-1:before {
+  content: "\6c";
+}
+.icon-lock:before {
+  content: "\6d";
+}
+.icon-chevron-circle-left:before {
+
+  /* color: black; */
+  font-size: 50px;
+  content: "\62";
+  position: static;
+ 
+}
+
+.icon-chevron-circle-right:before {
+  position: static;
+  /* color: black; */
+  font-size: 50px;
+  content: "\63";
+
+}
+.icon-shopping-cart:before {
+  font-size: 30px;
+  position: static;
+  content: "\64";
+
+}
+.icon-facebook-official:before {
+  content: "\65";
+  font-size: 24px;
+  position: static;
+
+}
+.icon-whatsapp:before {
+  content: "\66";
+  /* color: green; */
+  font-size: 24px;
+  position: static;
+}
+.icon-user:before {
+  content: "\67";
+  font-size: 29px;
+  position: static;
+}
+
+.icon-twitter:before {
+  content: "\68";
+  /* color: rgb(67, 153, 252); */
+  font-size: 20px;
+  position: static;
+}
+.icon-instagrem:before {
+  content: "\69";
+  position: static;
+  font-size: 20px;
+}
+.icon-phone:before {
+  content: "\6a";
+  /* color: rgb(248, 248, 253); */
+  font-size: 24px;
+  position: static;
+  
+}
+
+.icon-instagrem:hover{
+  color: darkgoldenrod;
+  font-size: 10px;
+}
+.icon-phone:hover{
+  color: darkgoldenrod;
+}
+.icon-chevron-circle-left:hover{
+  font-size: 2cm;
+  color: darkgoldenrod;
+  
+}
+.icon-chevron-circle-right:hover{
+  font-size: 2cm;
+  color: darkgoldenrod;
+  
+}
+
+.icon-phone:hover{
+  font-size: 10px;
+}
+.icon-twitter:hover{
+  font-size: 10px;
+  color: darkgoldenrod;
+}
+.icon-whatsapp:hover{
+  font-size: 10px;
+  color: darkgoldenrod;
+}
+.icon-facebook-official:hover{
+  font-size: 10px;
+  color: darkgoldenrod;
+}

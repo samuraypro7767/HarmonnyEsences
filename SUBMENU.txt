@@ -1,0 +1,90 @@
+HTML
+<nav id="navegacionPrincipal">
+            <ul class="menuNavP">
+                <li><a href="#">Inicio</a></li>
+                <li>
+                    <a href="#">Servicios</a>
+                    <ul class="Submenu">
+                        <li><a href="#">Mecánica Básica</a></li>
+                        <li><a href="#">Revisiones Automotriz</a></li>
+                        <li><a href="#">Revision Tecnomecanica</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nuestras sedes</a></li>
+                <li><a href="#">¿Como funciona?</a></li>
+                <li><a href="#"><img id="usuarioNavegacion" src="img/usuario.svg" alt="logo de usuario"></a>
+                    <ul class="Submenu">
+                        <li><a href="../views/iniciar.html">Iniciar Sesión</a></li>
+                        <li><a href="#">Registrarme</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+CSS
+
+#navegacionPrincipal {
+    width: 100%;
+    height: 100%;
+}
+
+.menuNavP {
+    display: grid;
+    grid-template-columns: repeat(5, 18%);
+    grid-template-rows: 80px;
+    margin: 10px 0 0 10px;
+    place-content: center;
+    place-items: center;
+    text-transform: capitalize;
+}
+
+.menuNavP li {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 40px;
+}
+
+.menuNavP li a {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+#usuarioNavegacion {
+    width: 20%;
+}
+
+.menuNavP li a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.menuNavP li:hover .Submenu {
+    visibility: visible;
+}
+
+.Submenu {
+    visibility: hidden;
+    margin-top: 2px;
+    display: grid;
+    grid-template-rows: auto;
+    width: 120%;
+    height: auto;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: #f0f0f0;
+}
+
+.Submenu li {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 40px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
